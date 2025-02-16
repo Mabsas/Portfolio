@@ -59,3 +59,31 @@ a{
 .navbar ul li.active a{
     color: #7cf03d;
 }
+
+
+
+
+.home{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    height: 100vh;
+    color: #fff;
+    padding: 60px 9% 0;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 2s linear forwards;
+    animation-delay: 1.7s;
+}
+
+.homeinfo  h1{
+    font-size: 55px;
+}
+.homeinfo h2{
+    font-size: 30px;
+    margin-top: -10px;
+}
+.homeinfo p{
+    font-size: 15px;
+    margin: 10px 0 25px;
+}
