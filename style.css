@@ -108,3 +108,30 @@ a{
     transition: .5s;
 
 }
+
+
+.homeinfo .sociobtn .btn:hover{
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: none;
+}
+.homeinfo .sociobtn .socioicon {
+    margin-left: 20px;
+}
+
+.homeinfo .sociobtn .socioicon a {
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid #7cf03d;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin: 0 8px;
+    transition: .5s;
+}
+
+.homeinfo .sociobtn .socioicon a:hover{
+    background: #7cf03d;
+    color: #1f242d;
+    box-shadow: 0 0 10px #7cf03d;
+}
