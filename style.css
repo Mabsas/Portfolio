@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Caladea',sans-serif;
+}
+
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    animation: show-content 2s linear forwards;
+    animation-delay: 1.2s;
+}
+
+
+
+.navbar .logo{
+        font-size: 30px;
+        font-weight: 800;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a {
+
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+
+/* applying hover effect active for the page we are in */
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color: #7cf03d;
+}
