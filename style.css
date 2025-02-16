@@ -31,7 +31,12 @@ a{
     animation-delay: 1.2s;
 }
 
-
+@keyframes show-content {
+    100%{
+        visibility: visible;
+        opacity: 1;
+    }
+}
 
 .navbar .logo{
         font-size: 30px;
@@ -199,4 +204,10 @@ a{
     transform: translateY(-100%);
     animation: show-bars .5s ease-in-out forwards;
     animation-delay: calc(.1s * var(--i));
+}
+
+@keyframes show-bars {
+    100%{
+        transform: translateY(0%);
+    }
 }
