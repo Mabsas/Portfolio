@@ -87,3 +87,24 @@ a{
     font-size: 15px;
     margin: 10px 0 25px;
 }
+
+
+
+.homeinfo .sociobtn{
+    display: flex;
+    align-items: center;
+}
+
+.homeinfo .sociobtn .btn{
+    display: inline-block;  /*ki kaj jani?*/
+    padding: 10px 30px;
+    background: transparent;
+    border:  2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    transition: .5s;
+
+}
