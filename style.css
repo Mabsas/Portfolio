@@ -85,12 +85,59 @@ a{
     font-size: 55px;
 }
 .homeinfo h2{
+    display: inline-block;
     font-size: 30px;
     margin-top: -10px;
+}
+
+.homeinfo h2 span {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px #7cf03d;
+    animation: display-text 12s linear infinite ;
+    animation-delay: calc(-3s * var(--i));
+}
+
+@keyframes display-text {
+    
+    25%,
+    100% {
+        display: none;
+    }
+}
+
+.homeinfo h2 span::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid #7cf03d;
+    color: #7cf03d;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 3s linear infinite;
+}
+
+@keyframes fill-text {
+    0%{
+        width: 0%;
+    }
+
+    25%{
+        width: 100%;
+    }
+
+    75%{
+        width: 0%;
+    }
+
+    
+    
 }
 .homeinfo p{
     font-size: 15px;
     margin: 10px 0 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
@@ -164,6 +211,18 @@ a{
     width: 500px;
     height: 500px;
     background: conic-gradient(transparent,transparent,transparent,#7cf03d);
+    transform: rotate(0deg);
+    animation: rotate-border 10s linear infinite;
+}
+
+.home-img .img-box::after {
+    animation-delay: -5s;
+}
+
+@keyframes rotate-border {
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
 .home-img .img-box .img-item {
